@@ -53,18 +53,19 @@ body {
             bottom: 0;
             width: 100%;
         }
-.about-layout {
+#about .about-layout {
     display: flex;
     align-items: center;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
-.about-text {
+#about .about-text {
     flex: 1;
     min-width: 0;
+    line-height: 1.8;
 }
 
-.profile-photo {
+#about .profile-photo {
     display: block;
     width: 220px;
     height: 290px;
@@ -73,15 +74,20 @@ body {
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
-    border: 4px solid #fff;
+    border: 4px solid white;
     box-shadow: 0 4px 18px rgba(15, 23, 42, 0.15);
 }
 
 @media (max-width: 650px) {
-    .about-layout {
+    #about .about-layout {
         flex-direction: column;
-        gap: 1.5rem;
     }
+
+    #about .profile-photo {
+        width: 180px;
+        height: 240px;
+    }
+}
 
     .profile-photo {
         width: 180px;
