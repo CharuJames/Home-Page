@@ -94,3 +94,22 @@ body {
         height: 240px;
     }
 }
+.cv-button {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.7rem 1.2rem;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cv-button:hover {
+    background-color: #345976;
+}
+
+.cv-button:focus-visible {
+    outline: 3px solid #3498db;
+    outline-offset: 3px;
+}
